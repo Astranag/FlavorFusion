@@ -42,4 +42,33 @@ footer {
 
 /* Recipe search page2 */
 
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
+  .searchCard-Js {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-Right,
+  .img-Left {
+    animation: slideIn 1s ease-in-out;
+    opacity: 0;
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+
+  .img-Right {
+    animation-delay: 1s; /* Delay for the img-Right */
+  }
+
+  .img-Left {
+    animation-delay: 2s; /* Delay for the img-Left */
+  }
