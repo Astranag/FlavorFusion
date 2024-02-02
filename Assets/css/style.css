@@ -1,74 +1,73 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 main-section {
-    text-align: center;
-    padding: 2em;
+  text-align: center;
+  padding: 2em;
 }
 
 cta-button {
-    display: inline-block;
-    padding: 1em 2em;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Recipe search page2 */
-
-@keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes slidein {
+  0% {
+    transform: translateY(-700px);
+    opacity: 0; /* Start with zero opacity */
+    visibility: hidden;
   }
-
-  .searchCard-Js {
-    display: flex;
-    justify-content: center;
+  100% {
+    transform: translateY(0);
+    opacity: 1; /* End with full opacity */
+    visibility: visible;
   }
+}
 
-  .img-Right,
-  .img-Left {
-    animation: slideIn 1s ease-in-out;
-    opacity: 0;
-    margin: 0 10px; /* Adjust margin as needed */
-  }
+.searchCard-Js {
+  display: flex;
+  justify-content: center;
+}
 
-  .img-Right {
-    animation-delay: 1s; /* Delay for the img-Right */
-  }
+.img-Right,
+.img-Left {
+  animation: slidein 2s ease-in-out;
+}
 
-  .img-Left {
-    animation-delay: 2s; /* Delay for the img-Left */
-  }
+.img-Left {
+  animation-delay: 1s; /* Delay for the img-Right */
+}
+
+.img-Right {
+  animation-delay: 2s; /* Delay for the img-Left */
+}
