@@ -8,55 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>FlavorFusion - Your Culinary Companion</title>
+    <title>Flavor Fusion - Your Culinary Companion</title>
     <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="./index.html"><img src="./Assets/images/F-glyph.svg" alt="a logo with a letter F">Flavor Fusion</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">FlavorFusion</a>
         </div>
-    </nav>
+    </nav> -->
+
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="display-4">Welcome to FlavorFusion!</h1>
-                <p class="lead">Discover exciting recipes and plan your meals with ease. Let's explore the world of flavors together.</p>
-                <a href="#section" class="btn btn-primary btn-lg">Explore Now</a>
+            <div class="col-md-4">
+                <img src="./Assets/images/alexandra-gorn-9rmnzkmydSY-unsplash.jpg" width="100%">
             </div>
-            <div class="col-md-6">
-                <img id="changingImage" src="" alt="Illustration" class="img-fluid">
+            <div class="col-md-4">
+                <img src="./Assets/images/anita-austvika-M_yJUCYf9js-unsplash.jpg" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="./Assets/images/kate-laine-iJe9ZGwkAII-unsplash.jpg" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4"><!-- Welcome to -->Flavor Fusion</h1>
+                <p class="lead">Discover exciting recipes and plan your meals with ease. Let's explore the world of flavors together.</p>
+                <!-- <a href="#section" class="btn btn-primary btn-lg">Explore Now</a> -->
+                <a href="#section" class="btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg "> Explore Now
+                </a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 FlavorFusion. All rights reserved.</p>
+        <p>&copy; 2024 Flavor Fusion. All rights reserved.</p>
     </footer>
 
-
-
-
-
     <script src="Assets/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const imageElement = document.getElementById('changingImage');
-        const apiUrl = 'https://api.spoonacular.com/recipes/random?number=1&apiKey=b05054fddfaf4890bfb772ff74710d3d';
-        function updateImage() {
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    const imageUrl = data.recipes[0].image;
-                    imageElement.src = imageUrl;
-                })
-                .catch(error => console.error('Error fetching images:', error));
-        }
-        updateImage();
-        setInterval(updateImage, 2000);
-    </script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
