@@ -115,6 +115,10 @@ cta-button {
 }
 
 /* Recipe cards section */
+
+
+
+
 .recipeCards-Js {
   display: flex;
   align-items: center;
@@ -127,6 +131,8 @@ cta-button {
   margin: 5px;
  
 }
+
+
 
 /* Footer Section */
 footer {
