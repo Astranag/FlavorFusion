@@ -144,3 +144,24 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* for mobile phones */
+
+@media only screen and (max-width: 767px) {
+ 
+
+  .img-Right,
+  .img-Left {
+    display: none;
+    animation: none; /* Disable animation for smaller screens */
+    
+  
+  }
+
+  .search-btn {
+    text-align: center;
+    width:auto
+  }
+
+}
+  
