@@ -18,8 +18,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><img src="./Assets/images/F-glyph.svg" alt="a logo with a letter F" width="50"></a>
-            <div class="brandName"><span class="fw-bold">Flavor Fusion</span></div>
+            <a class="navbar-brand" href="./index.html"><img src="./Assets/images/F-glyph.svg" alt="a logo with a letter F" width="50" class="d-inline-block align-text-center"></a>
+
+            <a href="./index.html" id="brandName"><span class="fw-bold">Flavor Fusion</span></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,25 +45,34 @@
 
 <!-- Main content and images -->
 
-    <div class="container mt-5">
+    <div class="container mainContent">
         <div class="row">
-            <div class="col-md-4">
-                <img src="./Assets/images/alexandra-gorn-9rmnzkmydSY-unsplash.jpg" width="100%">
+
+            <div class="col-sm-12 col-md-4 p-1">
+                <img src="./Assets/images/alexandra-gorn-9rmnzkmydSY-unsplash.jpg" width="100%" height="auto">
             </div>
-            <div class="col-md-4">
+
+            <div class="col-sm-12 col-md-4 p-1">
                 <img src="./Assets/images/anita-austvika-M_yJUCYf9js-unsplash.jpg" width="100%">
             </div>
-            <div class="col-md-4">
+
+            <div class="col-sm-12 col-md-4 p-1">
                 <img src="./Assets/images/kate-laine-iJe9ZGwkAII-unsplash.jpg" width="100%">
             </div>
+
         </div>
-        <div class="row">
+
+        <div class="row mainText">
+
             <div class="col-md-12">
-                <h1 class="display-4">Flavor Fusion</h1>
+                <h1 class="display-4"><span class="color">F</span>lavor <span class="color">F</span>usion</h1>
                 <p class="lead">Discover exciting recipes and plan your meals with ease. Let's explore the world of flavors together.</p>
-                <a href="#section" class="btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg "> Explore Now
+                <div class="justify-content-center">
+                <a href="#recipes" class="btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg"> Explore Now
                 </a>
+                </div>
             </div>
+
         </div>
     </div>
 
