@@ -75,3 +75,18 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
+
+// This JavaScript code allows users to search for recipes based on ingredients. Here's an explanation of the code:
+
+// First, the code selects several elements from the HTML document using the document.getElementById() and document.querySelector() methods. 
+//These elements include a search button, a list of meals, details content for the selected meal, and a close button for the meal details.
+// Next, the code adds event listeners to these elements. When the search button is clicked, the getMealList() function is called. When a meal is clicked in the list, the getMealRecipe() function is called. 
+//When the close button is clicked, the meal details are hidden.
+// The getMealList() function retrieves a list of meals that match the user's search input from the API at https://www.themealdb.com/api/json/v1/1/filter.php. 
+//It then generates HTML code to display the list of meals and inserts it into the mealList element. If no meals are found, it displays a message indicating that no meals were found.
+// The getMealRecipe() function retrieves the recipe for the selected meal from the API at https://www.themealdb.com/api/json/v1/1/lookup.php. 
+//It then calls the mealRecipeModal() function to display the recipe details in a modal.
+// The mealRecipeModal() function generates HTML code to display the recipe details and inserts it into the mealDetailsContent element. 
+// It also displays the modal by adding the showRecipe class to the modal's parent element.
+// Overall, this code provides a simple interface for users to search for recipes based on ingredients and view recipe details in a modal.
