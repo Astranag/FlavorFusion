@@ -21,8 +21,7 @@ body {
 }
 
 .nav-item a:hover {
-    /* color: #b01307; */
-    /* color: rgb(33, 33, 222); */
+    /* color: #b01307;*/
     color: rgb(115, 173, 17);
 
 }
@@ -42,14 +41,10 @@ font-size: 1.2em;
     margin-top: 10px;;
 }
 
-/* h1 {
-    color: rgb(115, 173, 17);
-} */
-
 .color {
-    /* color: rgb(115, 173, 17); */
-        color: #b01307;
-    /* color: rgb(33, 33, 222); */
+    color: rgb(115, 173, 17);
+        /* color: #b01307; */
+
 }
 .mainContent img {
     border-radius: 3px;
@@ -57,6 +52,78 @@ font-size: 1.2em;
 }
 
 /* Footer */
+
+.footer {
+    background: black;
+    color: white;
+    padding: 50px;
+}
+
+.footer-menu {
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: start;
+    
+}
+
+.footer-menu .title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-menu ul li {
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.contactUs ul li{
+    align-items: center;
+}
+
+.contactUs ul li a{
+    margin-left: 5px;
+    
+}
+
+.footer-menu ul li a:hover {
+    color: rgb(115, 173, 17);
+}
+
+.subscribe input {
+    margin-top: 7px;
+    
+}
+
+.subscribe button {
+    margin-top: 12px;
+    
+}
+
+.footer .social-media {
+    text-align: center;
+}
+
+.footer .social-media ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer .social-media ul a {
+    display: block;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+
+}
 
 footer {
     background-color: /*rgb(51,51,51)*/ white;

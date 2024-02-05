@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>Flavor Fusion - Your Culinary Companion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="Assets/css/style.css">
+    <title>Flavor Fusion - Your Culinary Companion</title>
+    
 </head>
 
 <body>
@@ -35,6 +39,9 @@
                         <a class="nav-link" href="#recipes">Recipes</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#savedRecipes">Saved</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#videos">Videos</a>
                     </li>
                 </ul>
@@ -43,7 +50,7 @@
 
     </nav>
 
-<!-- Main content and images -->
+<!-- Main content images -->
 
     <div class="container mainContent">
         <div class="row">
@@ -62,6 +69,8 @@
 
         </div>
 
+    <!-- Main content text -->
+
         <div class="row mainText">
 
             <div class="col-md-12">
@@ -76,8 +85,76 @@
         </div>
     </div>
 
+
+    <!-- Footer -->
+
+    <div class="container footer">
+        <div class="row footer-menu">
+
+            <div class="col-md-6 col-lg-4 company">
+                <div class="title">
+                    COMPANY
+                </div>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Saved</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-4 contactUs">
+                <div class="title">
+                    CONTACT US
+                </div>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-location-dot"></i><a href="#">London</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="#">info@flavorfusion.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="#">+447712356789</a></li>
+                </ul>
+            </div>
+
+            <div class="col-8 col-md-6 col-lg-4">
+                <div class="title">
+                    SUBSCRIBE
+                </div>
+                <form>
+                    <div class="form-group me-sm-3 row subscribe">
+                        <div>
+                            <label for="email">Stay in the know </label>
+                            <input type="email" class="form-control" id="email" placeholder="Your email address">
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="btn btn-primary ">Submit</button>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+
+        <div class="row social-media">
+            <div class="col-md-12">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- Footer -->
+
     <footer>
-        <p>&copy; 2024 Flavor Fusion. All rights reserved.</p>
+        <div>&copy; 2024 Flavor Fusion. All rights reserved.</div>
     </footer>
 
     <script src="Assets/js/script.js"></script>
