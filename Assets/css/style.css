@@ -102,22 +102,22 @@ font-size: 1.2em;
     
 }
 
-.subscribe button {
+.subscribe .btn {
     margin-top: 12px;
     
 }
 
-.footer .social-media {
+footer .social-media {
     text-align: center;
 }
 
-.footer .social-media ul {
+footer .social-media ul {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.footer .social-media ul a {
+footer .social-media ul a {
     display: block;
     margin: 0 10px;
     color: white;
@@ -125,7 +125,7 @@ font-size: 1.2em;
 
 }
 
-footer {
+.copyright {
     background-color: /*rgb(51,51,51)*/ white;
     color: /* white */ black;
     text-align: center;
