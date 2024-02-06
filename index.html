@@ -8,66 +8,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>Flavor Fusion - Your Culinary Companion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="Assets/css/style.css">
+    <title>Flavor Fusion - Your Culinary Companion</title>
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <a class="navbar-brand" href="./index.html"><img src="./Assets/images/F-glyph.svg" alt="a logo with a letter F">Flavor Fusion</a>
+<!-- Navbar -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./Assets/images/F-glyph.svg" alt="a logo with a letter F" width="50" class="d-inline-block align-text-center"></a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Recipes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Videos</a>
-                </li>
-            </ul>
+            <a href="./index.html" id="brandName"><span class="fw-bold">Flavor Fusion</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-center " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page2_Search.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#savedRecipes">Saved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">Videos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </nav>
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">FlavorFusion</a>
-        </div>
-    </nav> -->
+<!-- Main content images -->
 
-    <div class="container mt-5">
+    <div class="container mainContent">
         <div class="row">
-            <div class="col-md-4">
-                <img src="./Assets/images/alexandra-gorn-9rmnzkmydSY-unsplash.jpg" width="100%">
+
+            <div class="col-sm-12 col-md-4 p-1">
+                <img src="./Assets/images/alexandra-gorn-9rmnzkmydSY-unsplash.jpg" width="100%" height="auto">
             </div>
-            <div class="col-md-4">
+
+            <div class="col-sm-12 col-md-4 p-1">
                 <img src="./Assets/images/anita-austvika-M_yJUCYf9js-unsplash.jpg" width="100%">
             </div>
-            <div class="col-md-4">
+
+            <div class="col-sm-12 col-md-4 p-1">
                 <img src="./Assets/images/kate-laine-iJe9ZGwkAII-unsplash.jpg" width="100%">
             </div>
+
         </div>
-        <div class="row">
+
+<!-- Main content text -->
+
+        <div class="row mainText">
+
             <div class="col-md-12">
-                <h1 class="display-4"><!-- Welcome to -->Flavor Fusion</h1>
+                <h1 class="display-4"><span class="color">F</span>lavor <span class="color">F</span>usion</h1>
                 <p class="lead">Discover exciting recipes and plan your meals with ease. Let's explore the world of flavors together.</p>
-                <!-- <a href="#section" class="btn btn-primary btn-lg">Explore Now</a> -->
-                <a href="#section" class="btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg "> Explore Now
+                <div class="justify-content-center">
+                <a href="#recipes" class="btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg"> Explore Now
                 </a>
+                </div>
             </div>
+
         </div>
     </div>
 
+
+<!-- Footer -->
+
     <footer>
-        <p>&copy; 2024 Flavor Fusion. All rights reserved.</p>
+
+        <div class="container footer">
+            <div class="row footer-menu">
+
+                <div class="col-md-6 col-lg-4 company">
+                    <div class="title">
+                        COMPANY
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./page2_Search.html">Recipes</a></li>
+                        <li><a href="#">Saved</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-4 contactUs">
+                    <div class="title">
+                        CONTACT US
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-location-dot"></i><a href="#">London</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@flavorfusion.com">info@flavorfusion.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:9051290512">+447712356789</a></li>
+                    </ul>
+                </div>
+
+    <!-- Footer subscribe section -->
+
+                <div class="col-8 col-md-6 col-lg-3">
+                    <div class="title">
+                        SUBSCRIBE
+                    </div>
+                    <form>
+                        <div class="form-group me-sm-3 row subscribe">
+                            <div>
+                                <label for="email">Stay in the know </label>
+                                <input type="email" class="form-control" id="email" placeholder="Your email address">
+                            </div>
+                            
+                            <!-- <div>
+                                <button type="submit" class="btn btn-primary ">Submit</button>
+                            </div> -->
+
+                            <div class="justify-content-center">
+                                <a href="#" class="btn btn-md btn-outline-warning"> Submit
+                                </a>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div>
+
+<!-- Footer social media section -->
+
+            <div class="row social-media">
+                <div class="col-md-12">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        
+        
+        </div>
+
+        <div class="copyright">&copy; 2024 Flavor Fusion. All rights reserved.</div>
+        
     </footer>
 
     <script src="Assets/js/script.js"></script>
