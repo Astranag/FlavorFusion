@@ -9,23 +9,41 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./Assets/css/nadine.css" />
+    <link rel="stylesheet" href="./Assets/css/recipies-style.css" />
     <title>FlavorFusion</title>
   </head>
   <body>
     <!-- Navbar Section -->
    <!-- Navbar Section -->
-   <nav class="nav">
-    <div class="nav-logo">
-      <a href="index.html">Flavor Fusion</a>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./Assets/images/F-glyph.svg" alt="a logo with a letter F" width="50" class="d-inline-block align-text-center"></a>
+
+        <a href="./index.html" id="brandName"><span class="fw-bold">Flavor Fusion</span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-center " id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./page2_Search.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#savedRecipes">Saved</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#videos">Videos</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="page2_Search.html">Recipe</a></li>
-      <li><a href="#">Video</a></li>
-      <li><a href="#">Saved Recipes</a></li>
-    </ul>
-  </nav>
+
+</nav>
 
     <!-- Images backdrop section -->
     <div class="container-fluid search-background-Js">
@@ -51,17 +69,9 @@
         <div class="col-4 input-fields">
           <input
             type="text"
-            class="form-control"
+            class="form-control userSearch"
             placeholder="Select your Ingredients"
             aria-label="Ingredients Section"
-          />
-        </div>
-        <div class="col-4 input-fields">
-          <input
-            type="text "
-            class="form-control"
-            placeholder="Type amount of calories"
-            aria-label="Calories"
           />
         </div>
         <button type="submit" class="btn search-btn bg-light text-dark col-2">

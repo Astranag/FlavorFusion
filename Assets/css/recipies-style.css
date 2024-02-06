@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-header {
+/* header {
   background-color: #4caf50;
   color: white;
   text-align: center;
@@ -13,6 +13,32 @@ header {
 
 h1 {
   margin: 0;
+} */
+
+/* Navbar */
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+.nav-link { 
+  color: black;   
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-item a:hover {
+  /* color: #b01307;*/
+  color: rgb(115, 173, 17);
+
+}
+
+#brandName {
+font-size: 1.2em;
 }
 
 main-section {
