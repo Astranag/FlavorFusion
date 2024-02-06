@@ -1,167 +1,134 @@
 body {
-    font-family: "Arial", sans-serif;
+    font-family: 'Helvetica Neue','Arial', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #4caf50;
+}
+
+/* Navbar */
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.nav-link { 
+    color: black;   
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.nav-item a:hover {
+    /* color: #b01307;*/
+    color: rgb(115, 173, 17);
+
+}
+
+#brandName {
+font-size: 1.2em;
+}
+
+/* Main content */
+
+.mainContent {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.mainText {
+    margin-top: 10px;;
+}
+
+.color {
+    color: rgb(115, 173, 17);
+        /* color: #b01307; */
+
+}
+.mainContent img {
+    border-radius: 3px;
+
+}
+
+/* Footer */
+
+.footer {
+    background: black;
     color: white;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  main-section {
-    text-align: center;
-    padding: 2em;
-  }
-  
-  cta-button {
-    display: inline-block;
-    padding: 1em 2em;
-    background-color: #4caf50;
+    padding: 50px;
+}
+
+.footer-menu {
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: start;
+    
+}
+
+.footer-menu .title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-menu ul li {
+    margin-bottom: 5px;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  /* Recipe search page2 */
-  @keyframes slideinRight {
-    0% {
-      transform: translateY(-700px);
-      opacity: 0;
-      visibility: hidden;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-  
-  @keyframes slideinLeft {
-    0% {
-      transform: translateY(-1200px);
-      opacity: 0;
-      visibility: hidden;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-  
-  .search-background-Js {
-    display: flex;
-    justify-content: center;
+    
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.contactUs ul li{
     align-items: center;
-    height: 100vh; /* Set height to 100% of the viewport height */
-  
-    z-index: 0;
-  }
-  
-  .img-container {
+}
+
+.contactUs ul li a{
+    margin-left: 5px;
+    
+}
+
+.footer-menu ul li a:hover {
+    color: rgb(115, 173, 17);
+}
+
+.subscribe input {
+    margin-top: 7px;
+    
+}
+
+.subscribe .btn {
+    margin-top: 12px;
+    
+}
+
+footer .social-media {
     text-align: center;
-  }
-  
-  .img-Right {
-    animation: slideinRight 2s ease-in-out;
-    animation-delay: 1s; /* Delay for the img-Right */
-  }
-  
-  .img-Left {
-    animation: slideinLeft 3s ease-in-out;
-    animation-delay: 1s; /* Adjusted delay for the img-Left */
-  }
-  
-  /* Section for the form */
-  .form-container-Js {
+}
+
+footer .social-media ul {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh; /* Set height to 100% of the viewport height */
-    position: absolute; /* Adjusted position to absolute */
-    top: 50%; /* Set top to 0 to center vertically */
-    left: 50%; /* Set left to 0 to center horizontally */
-    transform: translate(-50%, -50%);
-    width: 100%; /* Set width to 100% to cover the entire viewport */
-    z-index: 1; /* Set z-index to ensure the form is on top of the images */
-  }
-  .form-container-Js{
-    background-color: transparent;
-  }
-  
-  #form-section {
-    /* background-color: #61767a; */
-    padding: 20px;
-    margin: 15px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .input-fields {
-    justify-content: center;
-  
-    padding: 10px;
-    width: 100%;
-  }
-  
-  /* Recipe cards section */
-  
-  
-  
-  
-  .recipeCards-Js {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-   
-  }
-  
-  .card-btn{
-    margin: 5px;
-   
-  }
-  
-  
-  
-  /* Footer Section */
-  footer {
+    margin-top: 20px;
+}
+
+footer .social-media ul a {
+    display: block;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+
+}
+
+.copyright {
     background-color: /*rgb(51,51,51)*/ white;
     color: /* white */ black;
     text-align: center;
-    /* padding: 1em 0; */
-    /* position: fixed; */
     bottom: 0;
     width: 100%;
-  }
-  
-  /* for mobile phones */
-  
-  @media only screen and (max-width: 767px) {
-   
-  
-    .img-Right,
-    .img-Left {
-      display: none;
-      animation: none; /* Disable animation for smaller screens */
-      
-    
-    }
-  
-    .search-btn {
-      text-align: center;
-      width:auto
-    }
-  
-  }
-   
+}
