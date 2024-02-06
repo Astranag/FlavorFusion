@@ -1,0 +1,143 @@
+/* Navbar */
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+.nav-link { 
+  color: black;   
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-item a:hover {
+  /* color: #b01307;*/
+  color: rgb(115, 173, 17);
+
+}
+
+#brandName {
+font-size: 1.2em;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8; 
+}
+
+.container {
+  background-color: whitesmoke; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+}
+
+h2 {
+  color: greenyellow; 
+}
+
+
+#searchResults {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: 20px; 
+  padding: 0;
+}
+
+.searchResultItem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e0f7e0; 
+}
+
+.searchResultItem a {
+  text-decoration: none;
+  color: greenyellow; 
+}
+
+  /* Footer */
+
+.footer {
+  background: black;
+  color: white;
+  padding: 50px;
+}
+
+.footer-menu {
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: start;
+  
+}
+
+.footer-menu .title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-menu ul li {
+  margin-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.contactUs ul li{
+  align-items: center;
+}
+
+.contactUs ul li a{
+  margin-left: 5px;
+  
+}
+
+.footer-menu ul li a:hover {
+  color: rgb(115, 173, 17);
+}
+
+.subscribe input {
+  margin-top: 7px;
+  
+}
+
+.subscribe .btn {
+  margin-top: 12px;
+  
+}
+
+footer .social-media {
+  text-align: center;
+}
+
+footer .social-media ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer .social-media ul a {
+  display: block;
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+
+}
+
+.copyright {
+  background-color: /*rgb(51,51,51)*/ white;
+  color: /* white */ black;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
