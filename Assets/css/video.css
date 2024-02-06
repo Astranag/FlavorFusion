@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8; 
+  }
+  
+  .container {
+    background-color: whitesmoke; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    color: #3c9c40; 
+  }
+  
+ 
+  #searchResults {
+    padding: 0;
+  }
+  
+  .searchResultItem {
+    margin-bottom: px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0f7e0; 
+  }
+  
+  .searchResultItem a {
+    text-decoration: none;
+    color: #3c9c40;  
+  }
+
+  footer {
+    background-color: /*rgb(51,51,51)*/ white;
+    color: /* white */ black;
+    text-align: center;
+    /* padding: 1em 0; */
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
