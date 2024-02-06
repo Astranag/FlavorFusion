@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Meal For Your Ingredients</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel = "stylesheet" href = "./Assets/css/recipies-style.css">
-</head>
-<body>
-   <!-- PLease Insert the navbar with any other required adjestments --> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assets/css/nadine.css" />
+    <title>FlavorFusion</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+   <!-- Navbar Section -->
    <nav class="nav">
     <div class="nav-logo">
       <a href="index.html">Flavor Fusion</a>
@@ -20,55 +26,140 @@
       <li><a href="#">Saved Recipes</a></li>
     </ul>
   </nav>
-  
-  <div class = "container">
-    <div class = "meal-wrapper">
-      <div class = "meal-search">
-        <h2 class = "title">Find Meals For Your Ingredients</h2>
-        <blockquote>Flavor Fusion - Your Culinary Companion<br>
-          
-        </blockquote>
 
-        <div class = "meal-search-box">
-          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
-          <button type = "submit" class = "search-btn btn" id = "search-btn">
-            <i class = "fas fa-search"></i>
-          </button>
-        </div>
+    <!-- Images backdrop section -->
+    <div class="container-fluid search-background-Js">
+      <div class="img-container">
+        <img
+          src="./Assets/recipe-images/Soup-monika-grabkowska-w-R_sfcakP0-unsplash.jpg"
+          class="img-Right"
+          style="width: 40%"
+          alt="soup dish"
+        />
+        <img
+          src="./Assets/recipe-images/Eggs-joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg"
+          class="img-Left"
+          style="width: 40%"
+          alt="egg sandwich dish"
+        />
       </div>
-<!-- meal item -->
-      <div class = "meal-result">
-        <h2 class = "title">Your Search Results:</h2>
-        <div id= "meal">
-          
-          
-          <!-- end of meal item -->
+    </div>
+
+    <!-- Form -->
+    <div class="form-container-Js container row col-md-6 mx-auto">
+      <form id="form-section" class="text-light bg-dark bg-gradient">
+        <div class="col-4 input-fields">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Select your Ingredients"
+            aria-label="Ingredients Section"
+          />
         </div>
-      </div>
-
-
-      <div class = "meal-details">
-        <!-- recipe close btn -->
-        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-          <i class = "fas fa-times"></i>
+        <div class="col-4 input-fields">
+          <input
+            type="text "
+            class="form-control"
+            placeholder="Type amount of calories"
+            aria-label="Calories"
+          />
+        </div>
+        <button type="submit" class="btn search-btn bg-light text-dark col-2">
+          Search
         </button>
-<!-- recipe save btn-->
-        <button type = "button" class = "btn save-recipe-btn" id = "save-recipe-btn">
-          Save Recipe
-        </button>
+      </form>
+    </div>
 
-        <!-- meal content -->
-        <div class = "meal-details-content">
-    
+    <!-- Recipe card section -->
+    <div class="container text-center recipeCards-Js">
+      <!-- Recipe section to be hidden -->
+      <!-- Make adjustments to the code as needed  || I haven't tested this one yet-->
+      <!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  // Hide recipeCards-Js initially
+  document.querySelector('.recipeCards-Js').style.display = 'none';
+
+  // Add an event listener to the form submission
+  document.querySelector('#form-section').addEventListener('submit', function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Your form processing logic goes here
+
+    // Display the recipeCards-Js section
+    document.querySelector('.recipeCards-Js').style.display = 'flex';
+  });
+});
+</script>
+
+<style>
+.recipeCards-Js {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+</style> -->
+
+      <div class="row">
+        <div class="col">
+          <div class="card col-12">
+            <img
+              src="./Assets/recipe-images/Fruit-tart-irina-jKh453Idils-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <a
+                href="#"
+                class="btn card-btn btn-secondary position-absolute bottom-0 end-0"
+                >Try me</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card col-12">
+            <img
+              src="./Assets/recipe-images/Bird-thigh-jimi-filipovski-0VRwj7rYnQI-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <a
+                href="#"
+                class="btn card-btn btn-secondary position-absolute bottom-0 end-0"
+                >Try me</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- Footer section -->
+    <footer class="mt-5 text-center text-muted">
+      <p>&copy; 2024 FlavorFusion. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2024 Flavor Fusion. All rights reserved.</p>
-  </footer>
-  <script src = "./Assets/js/recipe.js"></script>
-</body>
+    <!-- Script sources -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
 </html>
