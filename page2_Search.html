@@ -9,6 +9,17 @@
 </head>
 <body>
    <!-- PLease Insert the navbar with any other required adjestments --> 
+   <nav class="nav">
+    <div class="nav-logo">
+      <a href="index.html">Flavor Fusion</a>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page2_Search.html">Recipe</a></li>
+      <li><a href="#">Video</a></li>
+      <li><a href="#">Saved Recipes</a></li>
+    </ul>
+  </nav>
   
   <div class = "container">
     <div class = "meal-wrapper">
@@ -41,6 +52,10 @@
         <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
           <i class = "fas fa-times"></i>
         </button>
+<!-- recipe save btn-->
+        <button type = "button" class = "btn save-recipe-btn" id = "save-recipe-btn">
+          Save Recipe
+        </button>
 
         <!-- meal content -->
         <div class = "meal-details-content">
@@ -51,7 +66,9 @@
   </div>
 
 
-
+  <footer>
+    <p>&copy; 2024 Flavor Fusion. All rights reserved.</p>
+  </footer>
   <script src = "./Assets/js/recipe.js"></script>
 </body>
 </html>
