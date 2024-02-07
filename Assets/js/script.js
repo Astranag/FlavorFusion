@@ -28,9 +28,10 @@ function displaySavedRecipes() {
                             <div class="card-body">
                                 <h5 class="card-title">${recipe.strMeal}</h5>
                                 <p class="card-text">${recipe.strInstructions.slice(0, 100)}...</p>
-                                <a href="${recipe.strYoutube}" class="btn btn-primary" target="_blank">Watch Recipe</a>
-                                <button type="button" class="btn btn-primary" onclick="showMealRecipe('${recipe.idMeal}', '${recipe.strMeal}')">View Recipe</button>
-
+                                <div class="bb">
+                                <a href="${recipe.strYoutube}" class="explore btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg" target="_blank">Watch Recipe</a>
+                                <button type="button" class="explore btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg" onclick="showMealRecipe('${recipe.idMeal}', '${recipe.strMeal}')">View Recipe</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,6 @@ function displaySavedRecipes() {
             .catch(error => console.error('Error fetching saved recipe:', error));
     });
 }
-
 
 // Function to show meal recipe modal
 function showMealRecipe(mealId, mealName) {
@@ -61,12 +61,12 @@ function showMealRecipe(mealId, mealName) {
             // Set YouTube button href to recipe video URL
             youtubeButton.href = meal.strYoutube;
 
-
             // Show modal
             const recipeModal = new bootstrap.Modal(document.getElementById('recipeModal'));
             recipeModal.show();
         })
         .catch(error => console.error('Error fetching meal recipe:', error));
 }
+
 // Call the function to display saved recipes when the page loads
 displaySavedRecipes();

@@ -1,0 +1,46 @@
+/* Custom styling for the recipe cards */
+.meal-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.meal-card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.meal-card .card-body {
+    padding: 1.5rem;
+}
+
+.meal-card .card-title {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+
+.meal-card .btn-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px; /* Add space between the buttons and the card text */
+}
+
+.bb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bb a{
+    margin-bottom: 10px;
+}
