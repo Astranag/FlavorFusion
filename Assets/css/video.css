@@ -3,7 +3,7 @@
 .navbar a {
   color: black;
   text-decoration: none;
-  
+  width: 100%;
 }
 
 .nav-link { 
