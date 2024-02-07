@@ -25,13 +25,13 @@ function fetchYouTubeVideos() {
                 const videoCard = document.createElement('div');
                 videoCard.classList.add('col-md-4', 'video-card');
                 videoCard.innerHTML = `
-                    <div class="card">
-                        <img src="${videoThumbnail}" class="card-img-top" alt="Video Thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">${item.snippet.title}</h5>
-                            <a href="${videoUrl}" class="explore btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg" target="_blank">Watch Video</a>
-                        </div>
-                    </div>
+                <div class="card">
+                <img src="${videoThumbnail}" class="card-img-top" alt="Video Thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">${item.snippet.title}</h5>
+                    <a href="${videoUrl}" class="explore btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg" target="_blank">Watch Video</a>
+                </div>
+            </div>
                 `;
 
                 // Append card to video list

@@ -14,7 +14,7 @@ function searchMeals(searchInput) {
                         <img src="${meal.strMealThumb}" class="card-img-top" alt="${meal.strMeal}">
                         <div class="card-body">
                             <h5 class="card-title">${meal.strMeal}</h5>
-                            <button type="button" class="btn btn-primary" onclick="showMealRecipe('${meal.idMeal}', '${meal.strMeal}')">View Recipe</button>
+                            <button type="button" class="explore btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg" onclick="showMealRecipe('${meal.idMeal}', '${meal.strMeal}')">View Recipe</button>
                         </div>
                     </div>
                 `;
