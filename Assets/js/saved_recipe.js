@@ -28,7 +28,7 @@ function displaySavedRecipes() {
                                 <h5 class="card-title">${recipe.strMeal}</h5>
                                 <p class="card-text">${recipe.strInstructions.slice(0, 100)}...</p>
                                 <a href="${recipe.strYoutube}" class="btn btn-primary" target="_blank">Watch Recipe</a>
-                                <button type="button" class="btn btn-primary" onclick="showMealRecipe('${recipe.idMeal}', '${recipe.strMeal}')">View Recipe</button>
+                                <button type="button" class="explore btn btn-lg btn-outline-dark shadow shadow-info shadow-intensity-lg shadow-offset-down-lg" onclick="showMealRecipe('${recipe.idMeal}', '${recipe.strMeal}')">View Recipe</button>
 
                             </div>
                         </div>
