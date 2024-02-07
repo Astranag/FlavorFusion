@@ -386,3 +386,49 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+/* Custom styling for video cards */
+.video-card {
+  margin-bottom: 20px;
+}
+
+.video-card .card {
+  border: none;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-card .card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.video-card .card-body {
+  padding: 1.5rem;
+}
+
+.video-card .card-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.video-card  {
+  background-color: black;
+  border: none;
+}
+
+.video-card {
+  background-color:  rgb(115, 173, 17);
+}
+.mainContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
