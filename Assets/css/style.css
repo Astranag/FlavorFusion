@@ -2,9 +2,12 @@ body {
     font-family: 'Helvetica Neue','Arial', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
-/* Navbar */
 
 .navbar a {
     color: black;
@@ -34,7 +37,7 @@ font-size: 1.2em;
 
 .mainContent {
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .mainText {
@@ -131,4 +134,16 @@ footer .social-media ul a {
     text-align: center;
     bottom: 0;
     width: 100%;
+}
+
+
+/* Saved recipce section */
+
+.meal-card {
+    width: 18rem;
+    margin-bottom: 20px;
+}
+.meal-card img {
+    height: 200px;
+    object-fit: cover;
 }
