@@ -21,8 +21,9 @@ FlavourFusion a real-world front-end application that was bild with the mission 
 
 The following image shows the web application's appearance and functionality:
 
-![ demo]()
-
+![ demo](Assets/Screenshot/screencapture-astranag-github-io-FlavorFusion-index-html-2024-02-07-12_55_01.png)
+![demo](Assets/Screenshot/screencapture-astranag-github-io-FlavorFusion-search-page-html-2024-02-07-12_55_22.png)
+![demo](Assets/Screenshot/screencapture-astranag-github-io-FlavorFusion-yt-page-html-2024-02-07-12_55_55.png)
 ## 💻 USAGE
 
 [Visit the webpage here](https://astranag.github.io/FlavorFusion/index.html)
