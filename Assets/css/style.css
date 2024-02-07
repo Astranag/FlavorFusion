@@ -44,6 +44,10 @@ font-size: 1.2em;
     margin-top: 10px;;
 }
 
+.mainText .explore{
+    margin-bottom: 15px;
+}
+
 .color {
     color: rgb(115, 173, 17);
         /* color: #b01307; */
