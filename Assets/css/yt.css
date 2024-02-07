@@ -2,10 +2,7 @@
 .video-card {
     margin-bottom: 20px;
 }
-.btn{
-    background-color:  rgb(115, 173, 17);
-    color: white;
-}
+
 .video-card .card {
     border: none;
     background-color: #f8f9fa;
@@ -36,9 +33,7 @@
     border: none;
 }
 
-.video-card .btn-primary:hover {
-    background-color:  rgb(115, 173, 17);
-}
+
 .mainContent{
     display: flex;
     flex-direction: column;
