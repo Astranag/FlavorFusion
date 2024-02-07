@@ -1,118 +1,72 @@
-# Module 9 Project 1: Interactive Front-End Application
+# FlavorFusion
+# Project 1: Interactive Front-End Application
+![](https://img.shields.io/badge/html-HTML5-orange?logo=html5)
+![](https://img.shields.io/badge/css-CSS3-%231572B6?logo=css3)
+![](https://img.shields.io/badge/JavaScript-lightgrey?logo=javascript)
+![](https://img.shields.io/github/license/senseilein/password-generator)
 
-## Project Requirements
+## 🚩 TABLE OF CONTENT
 
-You and your group will use everything you've learned to create a real-world front-end application that you'll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+- [Description](#-description)
+- [Usage](#-usage)
+- [Installation](#-installation)
+- [Credits](#-credits)
+- [License](#-license)
 
-* Every Group member should have a minimum of 5 commits
+## 📖 DESCRIPTION
+### 🎯 What is it about?
+FlavourFusion a real-world front-end application that was bild with the mission to bring you the app that will empower you to become a kitchen maestro effortlessly! Simply choose your favorite ingredients and be inspired by tailored recipies and videos that FlavorFussion will present to you. ​
 
-* Use Bootstrap.
+### Preview
 
-* Be deployed to GitHub Pages.
+The following image shows the web application's appearance and functionality:
 
-* Be interactive (i.e., accept and respond to user input).
+![ demo]()
 
-* Use at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources).
+## 💻 USAGE
 
-* Does not use alerts, confirms, or prompts (use modals).
+[Visit the webpage here]()
 
-* Use client-side storage to store persistent data.
+## User Story
 
-* Be responsive.
+```text
+ As a user, 
+I want to be able to search for recipes by ingredient so that I can find recipes that I can make with the ingredients I like. 
+I want to be able to save recipes to a list so that I can easily access them later. 
+SO THAT I can view and plan my meals based on the suggested YouTube recipe videos.
+```
+### ✅ Acceptance Criteria
 
-* Have a polished UI.
+* The application should have a search bar where users can enter an ingredient.
+* When the user submits the search, the application should make a request to a recipe API and display a list of recipes that include that ingredient.
+* The application should use Bootstrap for styling and be responsive.
+* The application should be deployed to GitHub Pages.
+* The application should be interactive, allowing the user to submit a search and view the results.
+* The application should use at least two server-side APIs: a recipe API and a YouTube API. * * The YouTube API should used to display videos that are on theam with the recipe selected.
+* The application should use modals instead of alerts, confirms, or prompts.
+* The application should use client-side storage to save the user's search history.
+* The application should have a polished UI.
 
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+## 🚀 INSTALLATION
 
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+ For users, the project can be easily accessed by following the git clone process toward your local repository.
 
-## Presentation Requirements
+ ## 💬 CREDITS
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
 
-* Elevator pitch: a one minute description of your application
+We received guidance from the TAs and instructors in collaboration with this project.
+* Breakdown of tasks and roles – design (Nadine, Marija, Jason), Javascript and API's (Stivin, Prabu) 
 
-* Concept: What is your user story? What was your motivation for development?
+ The tutorial materials and other resources provided for the enrolled students at the Skills Bootcamp in Front-End Development acted as sources for primary and secondary links for reference. I will be sure to list below more material used towards the Project. 
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+Reference List:
+* https://www.w3schools.com/
+* https://stackoverflow.com/
+* https://www.themealdb.com/
+* 
+*
 
-* Demo: Show your stuff!
+ ​
+## 📜 LICENSE
 
-* Directions for Future Development
-
-* Links to the deployed application and the GitHub repository
-
-## Grading Requirements
-
-This project is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 25%
-
-* Satisfies the following code requirements:
-
-  * Application uses at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources)
-
-  * Application uses client-side storage to store persistent data.
-
-  * Application doesn't use JS alerts, prompts, or confirms (uses modals instead).
-
-  * Application uses Bootstrap.
-
-  * Application is interactive (accepts and responds to user input)
-
-  * Presentations will be no more than 10 minutes and no less than 5 minutes in length with 5 minutes at the end for Q&A
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using Powerpoint or a similar presentation software.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Front-End Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This repository is licensed under the MIT license.
