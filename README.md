@@ -25,7 +25,7 @@ The following image shows the web application's appearance and functionality:
 
 ## 💻 USAGE
 
-[Visit the webpage here]()
+[Visit the webpage here](https://astranag.github.io/FlavorFusion/index.html)
 
 ## User Story
 
