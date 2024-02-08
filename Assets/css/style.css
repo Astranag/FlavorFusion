@@ -151,3 +151,16 @@ footer .social-media ul a {
     height: 200px;
     object-fit: cover;
 }
+
+/* meal show */
+.img-fluid{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+.pop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

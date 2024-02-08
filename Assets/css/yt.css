@@ -1,16 +1,16 @@
-/* Common styling for both meal cards and video cards */
+
 .card {
-    height: 400px; /* Set a fixed height for the card */
+    height: 400px;
     margin-bottom: 20px;
 }
 
 .card .card-img-top {
-    height: 200px; /* Adjust the height of the image within the card */
+    height: 200px;
     object-fit: cover;
 }
 
 .card .card-body {
-    height: 200px; /* Adjust the height of the card body */
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -53,9 +53,12 @@ function showMealRecipe(mealId, mealName) {
 
             // Populate modal with recipe details
             modalBody.innerHTML = `
-                <img src="${meal.strMealThumb}" class="img-fluid mb-3" alt="${meal.strMeal}">
+            <div class="pop">
+            <img src="${meal.strMealThumb}" class="img-fluid mb-3" alt="${meal.strMeal}">
                 <h5>${meal.strMeal}</h5>
                 <p>${meal.strInstructions}</p>
+            </div>
+
             `;
 
             // Set YouTube button href to recipe video URL
