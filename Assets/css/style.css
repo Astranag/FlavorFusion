@@ -8,6 +8,7 @@ body {
 
 }
 
+/* Navbar */
 
 .navbar a {
     color: black;
@@ -16,15 +17,11 @@ body {
 }
 
 .nav-link { 
-    color: black;   
-}
-
-.nav-item {
-    padding: 10px;
+    color: black;
+    
 }
 
 .nav-item a:hover {
-    /* color: #b01307;*/
     color: rgb(115, 173, 17);
 
 }
@@ -50,7 +47,7 @@ font-size: 1.2em;
 
 .color {
     color: rgb(115, 173, 17);
-        /* color: #b01307; */
+    
 
 }
 .mainContent img {
@@ -133,8 +130,8 @@ footer .social-media ul a {
 }
 
 .copyright {
-    background-color: /*rgb(51,51,51)*/ white;
-    color: /* white */ black;
+    background-color: white;
+    color: black;
     text-align: center;
     bottom: 0;
     width: 100%;
